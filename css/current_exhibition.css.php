@@ -25,11 +25,12 @@ div.content div.image-gallery div
 div.content div.image-gallery div.subheading
 {
    font-family: sans-serif;
-   vertical-align: top;
    font-size: 55px;
+   margin: 0;
    padding-top: 130px;
-   padding-left: 200px;
-   padding-right: 200px;
+   text-align:right;
+   vertical-align: top;
+   width: 100%;
 }
 
 div.content div.image-gallery div.subheading h1
@@ -45,6 +46,11 @@ div.content div.image-gallery div.subheading img
    padding-top: 30px;
    margin: 0;
    vertical-align: top;
+}
+
+div.content div.image-gallery div.img-container-div img
+{
+   padding-right: 250px;
 }
 
 div.content div.image-gallery div.subheading img:hover,

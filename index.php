@@ -19,11 +19,15 @@ echo "$indent<div class='image-gallery'>\n";
 
 $subheadingText = "'Amorphous Bodily Stuff'<br/>- by Georgia Matthey";
 
-echo "$indent <div class='subheading'><h1>$subheadingText</h1><img src='images/finger_drag_two_sides_512.png'/></div>\n";
+echo "$indent <div class='subheading'>";
+echo          "<h1>$subheadingText</h1><img src='images/finger_drag_two_sides_512.png'/>";
+echo         "</div>\n";
 
 foreach ($imageFilenames as $imageFilename)
 {
-   echo "$indent <div><img src='$imageFilename' width='500px' height='400px'/></div>\n";
+   echo "$indent <div class='img-container-div'>";
+   echo          "<img src='$imageFilename' width='500px' height='400px'/>";
+   echo         "</div>\n";
 }
 
 echo "$indent</div>\n";

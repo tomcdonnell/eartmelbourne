@@ -23,9 +23,10 @@ body
    background-image: url('../images/white_wall_with_floor.jpeg');
    background-size: 100% 850px;
    background-repeat: no-repeat;
-   width: 1200px;
+   width: 1000px;
    margin-left: auto;
    margin-right: auto;
+   height: 100%;
 }
 
 h2
