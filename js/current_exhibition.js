@@ -10,7 +10,12 @@ $(document).ready
    function ()
    {
       $('div.image-gallery').mousedown(onMouseDownImageGallery);
-      $('div.image-gallery').mouseup(onMouseUpImageGallery);
+      $('div.image-gallery').mouseup(onMouseUpImageGallery    );
+      $('div.content'      ).mouseleave(onMouseUpImageGallery );
+
+      $('div.image-gallery').on('touchstart', onMouseDownImageGallery);
+      $('div.image-gallery').on('touchend'  , onMouseUpImageGallery  );
+      $('div.content'      ).on('touchleave', onMouseUpImageGallery  );
    }
 );
 
@@ -18,6 +23,7 @@ function onMouseDownImageGallery(ev)
 {
    boolGalleryIsDragging = true;
    $(window).mousemove(onMouseMoveWithinGallery);
+   $(window).on('touchmove', onMouseMoveWithinGallery);
    prevDragX = ev.clientX;
    return false;
 }

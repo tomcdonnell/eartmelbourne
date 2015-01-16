@@ -50,7 +50,7 @@ div.content div.image-gallery div.subheading img
 
 div.content div.image-gallery div.img-container-div img
 {
-   padding-right: 250px;
+   margin-right: 250px;
 }
 
 div.content div.image-gallery div.subheading img:hover,
